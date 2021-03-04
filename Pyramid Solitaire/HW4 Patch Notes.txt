@@ -1,0 +1,8 @@
+When it comes to changing my code, my memory is a bit hazy but i remember altering the remove methods a bit since i overlooked a method i was supposed to add that made sure the cards were exposed. 
+
+Other Changes: 
+- Some methods are now protected so that they usable by other classes.
+- getCardLocation has been abstracted to work with any model 
+- Altered how isGameOver works, now checks if all cards in the deck are in the removed cards list. That way, the Multi Pyramid method can use it without resulting in a win when card 1 1/ 0 0 gets removed while the other cards in the row dont. 
+- Added a new version of the method isCardExposed. It takes in the positions of two cards instead of one. While it doesnt do much in the basic model, it makes the implementing the rules for relaxed pyramid solitaire alot easier. 
+- The view has been slightly altered to fit with what HW4 required. However, this caused some bugs to appear in the HW2 hidden tests.
